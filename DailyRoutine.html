@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="DailyRoutine.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+
+   <div id="container">
+            <h1 class="center"><i class="fa fa-list-alt" aria-hidden="true"></i>To-do List</i></h1>
+            <!---todo headings-->
+
+            <div id="todo-headings">
+                <h2 id="h2">What's up ?</h2>
+                <h3 id="h3">Create a To-do<i class="fa fa-pencil fa-2xl " aria-hidden="true" style="color: black;"></i></h3>   
+                <h4 id="h4">What's in your To-do List</h4>
+            </div>
+            
+            <!---item add into todo list-->
+
+            <div id="flexInput"><input type="text" name="" id="Add">
+                <span id="InputError"></span>
+                <button id="addData" onclick="add()">To do</button>
+            </div>
+
+            <!----dynamically generating list-->
+
+            <div id="InCompleteTask">
+                <h4 id="h4">To-do</h4>
+            </div>
+
+            <!----displaying  list-->
+            <div id="display">
+            </div>
+        </div>
+          <script src="DailyRoutine.js"></script>
+    </body>
+</html>
