@@ -1,0 +1,335 @@
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
+@import url(https://fonts.google.com/specimen/Bitter);
+@import url(https://fonts.google.com/specimen/Qwitcher+Grypen);
+body{
+ background-color: #000000c4;  
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    font-family: 'Qwitcher Grypen';
+    position: fixed;
+    width: 100%;
+
+   
+}
+.bars{
+    color: white;
+    display: none;
+
+}
+.nav .active{
+    border: 1px solid white;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0px 12px;
+    cursor: pointer;
+
+}
+.listItem:hover{
+    border: 1px solid white; 
+    
+}
+.list{
+    float: left;
+}
+.brand img{
+    width:70px;
+  
+}
+.brand img{
+    width:70px;
+  
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+#container2{
+    
+    background-color:black;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    border-radius: 12px;
+    width: 70%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: row;
+    margin: 23px auto;
+    padding: 34px;
+ 
+}
+ img{
+    width: 40vw;
+}
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+  
+
+}
+.song{
+    margin: 5px;
+}
+.songItem img{
+    height: 8vh;
+    width: 53px;
+    margin: 0 23px;
+ 
+}
+.songItem{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+   align-items: center;
+  
+}
+.timeStamp{
+   margin: 0 23px;
+  
+}
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songlist{
+    color: white;
+    margin-left: 30px;
+    width: 100%;
+  
+   
+}
+
+.songPlay{
+   text-align: center;
+}
+#playing{
+    width: 80px;
+}
+
+.songInfo{
+    position:absolute;
+    left: 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.masterSongPlay{
+    font-size: 10px;
+    
+}
+
+
+.brand{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+.search {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    float: right;
+}
+#container{
+    
+  background-color: #000000d4;
+    color: rgb(243, 230, 230);
+    font-family: monospace;
+    /* border-radius: 12px; */
+    width: 100%;
+    min-height: 82vh;
+    padding-top: 70px;
+   
+   
+}
+
+ #hindi{
+    margin-top: 35px;
+}
+.playlist{
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+    height: 42vh;
+    margin-left: 10px;
+   
+  
+
+}
+.playlist::-webkit-scrollbar{
+    width:0;
+}
+.playlistItem{
+    width: 15vw;
+    height: 36vh;
+    background-color: white;
+    margin: 10px;
+    background-color: #00000014
+    
+}
+.playlistItem img{
+    width: 15vw;
+    height: 33vh;
+    cursor: pointer;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#myProgressBar{
+    width: 80vw;
+  
+
+}
+.songItem img{
+    height: 8vh;
+    width: 53px
+ 
+}
+.songItem{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 80%;
+    display: flex;
+   align-items: center;
+    border-radius: 11px;
+}
+.timeStamp{
+   margin: 0 23px;
+}
+
+
+@media only screen and (min-width:320px )and (max-width:450px) {
+    #container{
+      padding-top: 44px;;
+    }
+    .nav{
+        display: block;
+        font-size: 10px;
+       
+    }
+    nav ul{
+        height: 34px;
+    }
+    
+.brand{
+    font-size: 1.1rem;   
+}
+
+.playlist{
+    height: 40vh;
+}
+
+.playlistItem{
+    min-width: 43vw;
+    min-height: 30vh;
+    background-color: #00000014
+}
+
+.playlistItem img {
+    width: 43vw;
+    height: 30vh;
+  
+}
+#hindi{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 18px;
+}
+#english{
+    font-size: 16px;
+    margin-left: 18px;
+}
+    
+}
+@media only screen and (min-width:451px )and (max-width:720px) {
+    #container{
+      padding-top: 44px;;
+    }
+    .nav{
+        display: block;
+        font-size: 10px;
+       
+    }
+    nav ul{
+        height: 34px;
+    }
+    
+.brand{
+    font-size: 1.1rem;   
+}
+
+.playlist{
+    height: 40vh;
+}
+
+.playlistItem{
+    min-width: 43vw;
+    min-height: 30vh;
+    background-color: #00000014
+}
+
+.playlistItem img {
+    width: 43vw;
+    height: 30vh;
+  
+}
+#hindi{
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 18px;
+}
+#english{
+    font-size: 16px;
+    margin-left: 18px;
+}
+    
+}

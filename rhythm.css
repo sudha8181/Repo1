@@ -1,0 +1,229 @@
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
+@import url(https://fonts.google.com/specimen/Bitter);
+@import url(https://fonts.google.com/specimen/Qwitcher+Grypen);
+body{
+    background-color: #343232;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Qwitcher Grypen';
+   
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.brand img{
+    width:70px;
+  
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    
+}
+#container{
+    
+    background-color:black;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    border-radius: 12px;
+    width: 70%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: row;
+    margin: 23px auto;
+    padding: 34px;
+ 
+}
+ img{
+    width: 40vw;
+}
+.bottom{
+    position: sticky;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+  
+
+}
+.song{
+    margin: 5px;
+}
+.songItem img{
+    height: 8vh;
+    width: 53px;
+    margin: 0 23px;
+ 
+}
+.songItem{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+   align-items: center;
+  
+}
+.timeStamp{
+   margin: 0 23px;
+  
+}
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songlist{
+    color: white;
+    margin-left: 30px;
+    width: 100%;
+  
+   
+}
+.active{
+    color: white;
+    margin-left: 30px;
+    width: 150%;
+  
+   
+}
+.songPlay{
+   text-align: center;
+}
+#playing{
+    width: 80px;
+}
+
+.songInfo{
+    position:absolute;
+    left: 10vw;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.masterSongPlay{
+    font-size: 10px;
+    
+}
+
+ @media only screen and (min-width:320px )and (max-width:450px){
+    #container{
+        flex-direction: column;
+    }
+    nav ul{
+        height: 48px;
+    }
+    .brand img {
+        width: 70px;
+        height: 16vh;
+    }
+    img {
+        width: 72vw;
+        height: 33vh;
+    }
+    .active{
+        margin-left: 0px;
+    width: 100%;
+    }
+    h1{
+        margin-top: 19px;
+        font-size: 21px;
+    }
+    
+.song {
+    margin: 0px;
+}
+.songItem{
+    width: 100%;   
+
+}
+
+#playing {
+    width: 23px;
+    height: 4vh;
+}
+.brand{
+    font-size: 0.9rem;
+    height: 8vh;
+}
+.songPlay {
+    font-size: 10px;
+}
+
+ }
+ @media only screen and (min-width:450px )and (max-width:786px){
+    #container{
+        flex-direction: column;
+    }
+    nav ul{
+        height: 48px;
+    }
+    .brand img {
+        width: 70px;
+        height: 16vh;
+    }
+
+    img {
+        width: 72vw;
+        height: 33vh;
+    }
+    .active{
+        margin-left: 0px;
+    width: 100%;
+    }
+    h1{
+        margin-top: 19px;
+        font-size: 21px;
+    }
+    
+.song {
+    margin: 0px;
+}
+.songItem{
+    width: 100%;   
+
+}
+
+#playing {
+    width: 23px;
+    height: 4vh;
+}
+.brand{
+    font-size: 0.9rem;
+    height: 8vh;
+}
+.songPlay {
+    font-size: 12px;
+}
+
+
+
+ }
